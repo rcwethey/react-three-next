@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 
 const Dom = ({ children }) => {
   const ref = useRef(null)
+  
   useEffect(() => {
     useStore.setState({ dom: ref })
   }, [])
